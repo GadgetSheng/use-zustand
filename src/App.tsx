@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import { BearControls, BearCounter } from './zustand/1-BearCounter'
+import { WholeStore } from './zustand/2-FetchWholeStore'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +22,9 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+        <BearCounter />
+        <BearControls />
+        <WholeStore />
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
