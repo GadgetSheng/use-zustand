@@ -2,8 +2,8 @@ import { create } from 'zustand';
 const useStore = create(set => ({
   nuts: 0,
   honey: 0,
-  setNuts: (count) => set(state => state.nuts = count),
-  setHoney: (little) => set(state => state.honey = little)
+  setNuts: (count: number) => set((state: any) => state.nuts = count),
+  setHoney: (little: number) => set((state: any) => state.honey = little)
 }))
 
 function WholeStore() {
